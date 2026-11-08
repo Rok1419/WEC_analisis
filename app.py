@@ -6,14 +6,14 @@ import plotly.express as px
 import streamlit as st
 from dotenv import load_dotenv
 
-from wec_analytics.db import (
+from db import (
     init_db,
     save_import,
     list_imports,
     delete_import,
 )
-from wec_analytics.parser import parse_pdf_bytes, download_pdf
-from wec_analytics.scraper import sync_bpillar_reports
+from parser import parse_pdf_bytes, download_pdf
+from scraper import sync_bpillar_reports
 
 load_dotenv()
 
