@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-from wec_analytics.parser import download_pdf, parse_pdf_bytes
-from wec_analytics.db import list_imports, save_import
+from parser import download_pdf, parse_pdf_bytes
+from db import list_imports, save_import
 
 def sync_bpillar_reports(target_url):
     """Scrapes a URL for PDF links and imports missing ones (Strictly WEC only)."""
